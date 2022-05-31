@@ -1,5 +1,5 @@
 import "./Projects.scss";
-import { data } from "../../assets/data/data";
+import { data } from "../../assets/Data/data.js";
 
 const Projects = ({ isHovering, handleMouseOver, HandleMouseOut }) => {
   const projectJSX = data.map((d) => {
