@@ -19,7 +19,7 @@ export const data = [
   {
     id: "2",
     icon: Git,
-    title: "JavaScript calculator",
+    title: "JS calculator",
     desc: " A functioning calculator created with JS,SASS and HTML, tested with cypress",
     img: Calculator,
     url: "https://github.com/CameronHyden/calculator-java",
