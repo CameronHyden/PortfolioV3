@@ -11,11 +11,18 @@ const Projects = ({ isHovering, handleMouseOver, HandleMouseOut }) => {
         key={d.id}
       >
         <div className="projects__heading">
-          <h2>{d.title}</h2>
+          <h2 className="projects__title">{d.title}</h2>
           <a href={d.url}>
-            <img className="projects__icon" src={d.icon} alt="" />
+            <img
+              className="projects__icon"
+              src={d.icon}
+              target="_blank"
+              rel="noreferrer"
+            />
           </a>
-          <h3>{d.liveSite}</h3>
+          <a href={d.liveSite} target="_blank" rel="noreferrer">
+            <p className="projects__liveSite">LIVE SITE</p>
+          </a>
         </div>
         <div className="projects__imageDisplay">
           <img className="projects__image" src={d.img} alt="" />
