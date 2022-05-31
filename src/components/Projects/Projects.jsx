@@ -1,15 +1,10 @@
 import "./Projects.scss";
 import { data } from "../../assets/Data/data.js";
 
-const Projects = ({ isHovering, handleMouseOver, HandleMouseOut }) => {
+const Projects = () => {
   const projectJSX = data.map((d) => {
     return (
-      <div
-        className="projects"
-        onMouseOver={handleMouseOver}
-        onMouseOut={HandleMouseOut}
-        key={d.id}
-      >
+      <div className="projects" key={d.id}>
         <div className="projects__heading">
           <h2 className="projects__title">{d.title}</h2>
           <a href={d.url}>
@@ -26,7 +21,7 @@ const Projects = ({ isHovering, handleMouseOver, HandleMouseOut }) => {
         </div>
         <div className="projects__imageDisplay">
           <img className="projects__image" src={d.img} alt="" />
-          {isHovering && <p>{d.desc}</p>}
+          <p className="projects__description">{d.desc}</p>
         </div>
       </div>
     );
