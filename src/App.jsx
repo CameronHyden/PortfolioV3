@@ -1,17 +1,15 @@
-import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import "./styles/main.scss";
 import { useState } from "react";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import Layout from "./components/Layout/Layout";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <Routes>
-      <Route
-        path="*"
-        element={<Home menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
-      />
-    </Routes>
+    <Layout>
+      <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> <ProjectsPage />
+    </Layout>
   );
 };
 
