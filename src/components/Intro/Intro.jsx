@@ -9,7 +9,7 @@ const Intro = () => {
         <div className="circleContainer__circle circleContainer__circle--3"></div>
         <div className="circleContainer__circle circleContainer__circle--4"></div>
         <div className="circleContainer__text">
-          <p>Hi there! I am Cameorn Hyden. Juniour full stack developer</p>
+          <p>Hi there! I am Cameron Hyden. Juniour full stack developer</p>
         </div>
       </div>
     </div>
