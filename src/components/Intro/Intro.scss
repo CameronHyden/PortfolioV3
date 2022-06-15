@@ -1,91 +1,83 @@
 @use "../../styles//variables" as *;
 .intro {
-  width: 100%;
   height: 100vh;
-  display: flex;
-  margin-top: 3rem;
-  .circleContainer {
-    position: relative;
-    width: 100%;
+  position: relative;
+  &__circle {
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    &--1 {
+      bottom: 80%;
+      right: 10%;
+      width: 50px;
+      height: 50px;
+    }
+    &--2 {
+      bottom: 30%;
+      left: 60%;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+    }
+    &--3 {
+      bottom: 63%;
+      left: 10%;
+      width: 100px;
+      height: 100px;
+    }
+    &--4 {
+      bottom: 175px;
+      left: 349px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    text-align: center;
+    background-color: $background-color;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: $tablet-breakpoint) {
+  .intro {
     &__circle {
-      border-radius: 50%;
-      background-color: white;
-      position: absolute;
       &--1 {
-        bottom: 80%;
-        right: 10%;
-        width: 50px;
-        height: 50px;
       }
       &--2 {
-        bottom: 40%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        z-index: 1;
       }
       &--3 {
-        bottom: 60%;
-        left: 10%;
-        width: 100px;
-        height: 100px;
+        bottom: 70%;
       }
       &--4 {
-        bottom: 10%;
-        left: 50%;
-        width: 60px;
-        height: 60px;
       }
     }
     &__text {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 50%;
-      margin-left: auto;
-      margin-right: auto;
-      width: 180px;
-      text-align: center;
-      background-color: $background-color;
+      font-size: $font-size-medium;
+      width: 600px;
     }
   }
 }
 @media only screen and (min-width: $tablet-breakpoint) {
   .intro {
-    .circleContainer {
-      &__circle {
-        &--1 {
-        }
-        &--2 {
-        }
-        &--3 {
-        }
-        &--4 {
-        }
+    &__circle {
+      &--1 {
       }
-      &__text {
-        font-size: $font-size-medium;
-        width: 600px;
+      &--2 {
+      }
+      &--3 {
+      }
+      &--4 {
       }
     }
-  }
-}
-@media only screen and (min-width: $tablet-breakpoint) {
-  .intro {
-    .circleContainer {
-      &__circle {
-        &--1 {
-        }
-        &--2 {
-        }
-        &--3 {
-        }
-        &--4 {
-        }
-      }
-      &__text {
-        width: 600px;
-      }
+    &__text {
+      width: 600px;
     }
   }
 }
