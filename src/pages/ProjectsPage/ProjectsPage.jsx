@@ -3,9 +3,14 @@ import Projects from "../../components/Projects/Projects";
 
 const ProjectsPage = () => {
   return (
-    <div className="projectsContainer">
-      <Projects />
-    </div>
+    <>
+      <div>
+        <h2 className="ProjectsPage__title">My projects</h2>
+      </div>
+      <div className="projectsContainer">
+        <Projects />
+      </div>
+    </>
   );
 };
 

@@ -1,4 +1,7 @@
 @use "../../styles//variables" as *;
+.ProjectsPage__title {
+  text-align: center;
+}
 .projectsContainer {
   display: grid;
   gap: 2rem;
