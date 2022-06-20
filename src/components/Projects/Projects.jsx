@@ -4,7 +4,7 @@ import { data } from "../../assets/Data/data.js";
 const Projects = () => {
   const projectJSX = data.map((d) => {
     return (
-      <div className="projects" key={d.id}>
+      <div className="projects" key={d.id} id="projects">
         <div className="projects__heading">
           <h2 className="projects__title">{d.title}</h2>
           <a href={d.url}>

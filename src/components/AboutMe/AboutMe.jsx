@@ -3,7 +3,7 @@ import Me from "../../assets/images/me.png";
 
 const AboutMe = () => {
   return (
-    <div className="aboutMe">
+    <div className="aboutMe" id="aboutMe">
       <img className="aboutMe__image" src={Me} alt="" />
       <p className="aboutMe__text">
         Throughout university and previous job roles, I have always gravitated

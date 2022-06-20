@@ -10,12 +10,12 @@ const SideNavBar = ({ menuOpen, setMenuOpen }) => {
           </a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a className="sideBar-links--link" href="#carousel">
+          <a className="sideBar-links--link" href="#projects">
             Projects
           </a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a className="sideBar-links--link" href="#contact">
+          <a className="sideBar-links--link" href="#aboutMe">
             About me
           </a>
         </li>
