@@ -2,6 +2,7 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://CameronHyden.github.io/portfolioV3",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -24,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
